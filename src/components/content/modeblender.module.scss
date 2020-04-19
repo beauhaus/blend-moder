@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.container {
+  background: linear-gradient(45deg, #273152 0%, #576FC0 100%);
+  font-weight: 200;
+  width: 100vw;
+  min-height: 92vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 55vh 37vh 100vh;
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // img dimensions 360x360
+  .img-container {
+    grid-column: 1;
+    margin: 0 1%;
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .blend-btn-container {
+    grid-column: 1;
+    // background: #ff9b18;
+    display: grid;
+    grid-template-columns:60% 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+  }
+ * {
+  --icon-green: rgba(143, 143, 143, 0.3);
+
+ }
+}
+
