@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled'
 
-const TemplateWrap = styled('div')`
+const TileBGWrap = styled('div')`
     --square: 18vw;
 
     color: #555;
@@ -91,9 +91,9 @@ const TemplateWrap = styled('div')`
 }
    
 `;
-const Template = () => {
-  // console.log("TemplateWrap: ")
-  return (<TemplateWrap>
+const TileBG = () => {
+  // console.log("TileBGWrap: ")
+  return (<TileBGWrap>
     <svg width="0" height="0">
       <filter id="tile-filter">
         <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="1" />
@@ -140,7 +140,7 @@ const Template = () => {
         <div className="row-5"></div>
       </div>
     </div>
-  </TemplateWrap>)
+  </TileBGWrap>)
 }
 
-export default Template;
+export default TileBG;

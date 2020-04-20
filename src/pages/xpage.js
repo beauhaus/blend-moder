@@ -1,12 +1,12 @@
-import React from 'react';
-import Layout from '../components/scaffold/layout'
-import Template from '../components/content/templatecontent'
-const Xpage = () => {
-    // console.log("XXX: ")
-    return (<Layout>
-    <Template/>
+// import React from 'react';
+// import Layout from '../components/scaffold/layout'
+// // import Template from '../components/content/templatecontent'
+// const Xpage = () => {
+//     // console.log("XXX: ")
+//     return (<Layout>
+//     <Template/>
 
-    </Layout>)
-}
+//     </Layout>)
+// }
 
-export default Xpage;
+// export default Xpage;
