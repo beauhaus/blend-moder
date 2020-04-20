@@ -1,5 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+// @font-face {
+//     font-family: "Megrim-Regular";
+//     src: url("Megrim-Regular.ttf") format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
+@font-face {
+    font-family: Megrim;
+    font-weight: 400;
+    font-style: normal;
+    src: url("Megrim-Regular.ttf") format('truetype');
+    font-display: swap;
+  }
 
 .test {
 fill: #8a99c2;
@@ -20,7 +33,7 @@ background: linear-gradient(175deg, #8ca1a0 0%, #60807d 100%);
 fill: rgba(122, 122, 122, 0.5);
 fill: #b17777;
 
-fill: #423d2b; /* my brown? */
+fill: #b1a67d; /* my brown? */
 
 fill: #fff;
 color: #362828;
