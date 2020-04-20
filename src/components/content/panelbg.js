@@ -39,6 +39,8 @@ button {
   border: 8px solid #F1F0EE;
   box-shadow: inset 0px 0px 0px 1px #b1a67d;
   filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+
   display: grid;
   &:focus, &:active {
     outline: none;
@@ -69,6 +71,16 @@ const PanelBG = () => {
           </feDiffuseLighting>
           <feBlend in="SourceGraphic" mode="screen" />
         </filter>
+        {/* <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+        <feOffset dx="0" dy="0" result="offsetblur"/>
+        <feFlood flood-color="#000000" flood-opacity="0.2"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+          <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+      </filter> */}
         <rect x="0" y="0" height="100%" className="panel-bg" width="100%" filter="url(#roughpaper)" />
       </svg>
       <button><div className="on-off-light"></div></button>
