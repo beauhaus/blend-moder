@@ -1,23 +1,24 @@
-// @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
-// @font-face {
-//     font-family: "Megrim-Regular";
-//     src: url("Megrim-Regular.ttf") format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 
+
+/*  Chrome & FF ✅, Safari 👎🏼*/
 @font-face {
-    font-family: Megrim;
-    font-weight: 400;
+    font-family: "Megrim";
+    font-weight: normal;
     font-style: normal;
     src: url("Megrim-Regular.ttf") format('truetype');
     font-display: swap;
   }
 
 .test {
-fill: #8a99c2;
+fill: rgba(255, 0, 255, 0.5);
+fill: #3dddc2; /*on*/
+fill: rgba(69, 238, 210, 0.712); /*active*/
+
 fill: rgba(255, 248, 183, 0.7);
-fill: #ffb89e;
+fill:   #ede9e8;
+fill:   #dacbc9; /*edge*/
+
 border-top: 1px solid #afafaf;
 color: #f0e0d2;
 fill: linear-gradient(0deg, #393b46 30%, #555968 120%);

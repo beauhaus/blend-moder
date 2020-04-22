@@ -5,6 +5,7 @@ import GlobalStylesImport from './layout-global'
 import layoutMainImport from './layout-main'
 import Header from './header'
 import useSiteMetadata from '../../hooks/use-site-metadata'
+import PanelBG from '../content/panelbg'
 
 
 
@@ -28,7 +29,10 @@ const {title, desc} = useSiteMetadata();
                 <meta name={title} content={desc}/>
             </Helmet>
             <Header />
-            <main css={cssMain}>{children}</main>
+            <main css={cssMain}>
+            {children}
+            <PanelBG/>
+            </main>
         </>)
 }
 

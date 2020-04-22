@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from '@emotion/styled'
 
 const PanelBGWrap = styled('div')`
 width: 100vw;
  height: 200vh; /* TODO: adjust to auto? */
 text-align: right;
-position: relative;
+position: absolute;
+top:0;
+left: 0;
 .panel-svg {
  width: 100%;
  height: 100%; 
@@ -28,6 +30,13 @@ h1 {
   text-shadow: 2px 2px 0px #fff;;
   
 }
+h2 {
+  font-size: 50px;
+  
+  top: 40vh;
+  right: 3vw;
+  position: absolute;
+}
 button {
   position: absolute;
   left: 40vw;
@@ -45,21 +54,25 @@ button {
   &:focus, &:active {
     outline: none;
   }
-  .on-off-light {
+  ${'' /* .on-off-light {
     border-radius: 50%;
     margin: auto;
-  width: 40px;
-  height:  40px;
-  background: transparent;
-  border: 2px solid #27EFF0;
-  opacity: 0.25;
-  }
+    width: 40px;
+    height:  40px;
+    background: transparent;
+    border: 2px solid #27EFF0;
+    opacity: 0.25;
+  } */}
 }
-
-
 
 `;
 const PanelBG = () => {
+
+  // const [power, setPower] = useState(true)
+
+  // const powerToggle=() => {
+  //   setPower(!power)
+  // }
   // console.log("PanelBGWrap: ")
   return (
     <PanelBGWrap>
@@ -71,10 +84,12 @@ const PanelBG = () => {
           </feDiffuseLighting>
           <feBlend in="SourceGraphic" mode="screen" />
         </filter>
-        
         <rect x="0" y="0" height="100%" className="panel-bg" width="100%" filter="url(#roughpaper)" />
       </svg>
-      <button><div className="on-off-light"></div></button>
+      {/* <button onClick={powerToggle} role="button"> */}
+      {/* <div className="on-off-light"></div> */}
+      {/* </button> */}
+      {/* <h2>power: {`${power}`}</h2> */}
       <h1>css blender pro</h1>
     </PanelBGWrap>
   )

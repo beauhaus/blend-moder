@@ -14,7 +14,7 @@ const Styles =
             margin: 0.2rem;
         }
         nav {
-         height: 8vh;
+         
          white-space: nowrap;         
          padding: 2%;
          a:hover {
