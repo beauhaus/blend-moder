@@ -2,12 +2,19 @@ import React from 'react';
 import Layout from '../components/scaffold/layout'
 import "normalize.css"
 import styled from '@emotion/styled'
+import Landing from '../components/blendicons/Landing';
 
 const AppFrame = styled('div')`
-height: auto;
+width: 100vw;
 min-height: 100vh;
+height: auto;
 display: grid;
 grid-template-rows: 8vh 1fr;
+position: relative;
+display: flex;
+justify-content: space-around;
+  
+
 /* below is for testing purposes only */
 background: rgba(255, 0, 255, 0.5);
 position: relative;
@@ -61,7 +68,7 @@ const IndexPg =() => (
     <hr/>
     <hr/>
     <Layout>
-        <h1>Home</h1>
+        <Landing/>
     </Layout>    
     </AppFrame>
     );

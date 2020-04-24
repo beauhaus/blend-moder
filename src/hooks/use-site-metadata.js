@@ -1,7 +1,7 @@
 import {graphql, useStaticQuery } from 'gatsby'
 
 const useSiteMetadata =() => {
-    console.log("ran!")
+    // console.log("ran!")
     const data = useStaticQuery(graphql`
     query {
         site {

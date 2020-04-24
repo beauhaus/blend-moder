@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.container {
+  /*button*/
+  margin-top: 1vh;
+  border: none;
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 5px 0px #fff, 5px 5px 5px -2px #000;
+  background: radial-gradient(closest-side,
+      var(--base-btn-color) 0%,
+      var(--base-btn-color) 26%,
+      var(--power-on) 27%,
+      var(--power-on) 29%,
+      var(--base-btn-color) 30%,
+      var(--base-btn-color) 82.5%,
+      var(--power-trim) 83%,
+      var(--base-btn-color) 83.5%,
+      #e6d6c9 100%);
+
+  &:focus {
+    outline: none;
+    // box-shadow: 0 0 0 1px blue;
+    border: 3px solid lightblue;
+  }
+
+  &:active {
+    box-shadow: inset 5px 5px 6px 0px #fff, 2px 2px 3px -2px #000;
+    background: radial-gradient(closest-side,
+        var(--power-on) 0%,
+        var(--power-on) 30%,
+        var(--power-on-active) 31%,
+        var(--base-btn-color) 50%,
+        var(--base-btn-color) 82.5%,
+        var(--power-trim) 83%,
+        var(--base-btn-color) 83.5%,
+        #e6d6c9 100%);
+  }
+
+  &>div {
+    background: radial-gradient(ellipse at 25% 25%,
+        rgba(255, 255, 255, 0.5) 5%,
+        rgba(237, 233, 232, 0.5) 40%,
+        rgba(237, 233, 232, 0) 50%);
+  }
+}

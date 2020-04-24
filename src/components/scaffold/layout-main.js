@@ -1,13 +1,12 @@
 const Styles = `
     margin: 0;
-    max-width: 100vw;
-    width: 1500px;
+    width: 100vw;
+    max-width: 1500px;
     min-height: 100vh;
     height: auto;
     padding: 0;
-    display: grid;
-    align-content: center;
     postion: relative;
-    // border: 2px dashed #000;
+    display: flex;
+    justify-content: space-around;
     `
 export default Styles;

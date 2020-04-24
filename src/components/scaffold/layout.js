@@ -14,24 +14,19 @@ const GlobalStyles = css`${GlobalStylesImport}`;
 const cssMain = css`${layoutMainImport}`;
 
 const Layout = ({ children }) => {
-    
- 
-const {title, desc} = useSiteMetadata();
-
-
-
+    const { title, desc } = useSiteMetadata();
     return (
         <>
             <Global styles={GlobalStyles} />
             <Helmet>
-                <html lang="en"/>
+                <html lang="en" />
                 <title>SVG Experiments</title>
-                <meta name={title} content={desc}/>
+                <meta name={title} content={desc} />
             </Helmet>
             <Header />
             <main css={cssMain}>
-            {children}
-            <PanelBG/>
+                {children}
+                <PanelBG />
             </main>
         </>)
 }
