@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/scaffold/layout'
 import "normalize.css"
 import styled from '@emotion/styled'
-import Landing from '../components/blendicons/Landing';
+import Landing from '../components/content/landing';
 
 const AppFrame = styled('div')`
 width: 100vw;
