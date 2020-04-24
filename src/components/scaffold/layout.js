@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import GlobalStylesImport from './layout-global'
 import layoutMainImport from './layout-main'
 import Header from './header'
-import useSiteMetadata from '../../hooks/use-site-metadata'
 import PanelBG from '../content/panelbg'
+import useSiteMetadata from '../../hooks/use-site-metadata'
 
 
 
@@ -25,8 +25,8 @@ const Layout = ({ children }) => {
             </Helmet>
             <Header />
             <main css={cssMain}>
+                  <PanelBG />
                 {children}
-                <PanelBG />
             </main>
         </>)
 }

@@ -17,20 +17,7 @@ z-index; 0;
 .panel-bg {
  fill: rgba(202, 120, 42, 0.4);
 }
-h1 {
-  font-size: 50px;
-  opacity: 0.8;
-  top: 80vh;
-  right: 3vw;
-  position: absolute;
-  font-family: "Megrim", sans-serif;
-  ${'' /* font-weight: thin; */}
-  color: #362828;  /* TODO: choose a brown for text color & be done with it */
-  ${'' /* color: #fff; */}
-  text-shadow: 1px 1px 0.5px #47E8B3; /* light bluegreen */
-  text-shadow: 2px 2px 0px #fff;;
-  
-}
+
 h2 {
   font-size: 50px;
   
@@ -91,7 +78,7 @@ const PanelBG = () => {
       {/* <div className="on-off-light"></div> */}
       {/* </button> */}
       {/* <h2>power: {`${power}`}</h2> */}
-      <h1>css blender pro</h1>
+      {/* <h1>css blender pro</h1> */}
     </PanelBGWrap>
   )
 }

@@ -19,6 +19,7 @@ justify-content: space-around;
 background: rgba(255, 0, 255, 0.5);
 position: relative;
 hr{
+    display: none;
     background: #fff;
     position: absolute;
     left: 0;
@@ -68,6 +69,7 @@ const IndexPg =() => (
     <hr/>
     <hr/>
     <Layout>
+    
         <Landing/>
     </Layout>    
     </AppFrame>

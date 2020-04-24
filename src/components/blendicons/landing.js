@@ -8,11 +8,25 @@ const LandingWrap = styled('div')`
     height: auto;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-
+    align-items: center;
+    text-align: center;
+    h1 {
+        width: 100%;
+        margin: 70vh auto;
+        font-size: 65px;
+        opacity: 1;
+        font-family: "Megrim", sans-serif;
+        ${'' /* font-weight: thin; */}
+        color: #362828;  /* TODO: choose a brown for text color & be done with it */
+        text-shadow: 1px 1px 0.5px #47E8B3; /* light bluegreen */
+        text-shadow: 2px 2px 0px #fff;
+        
+    }
     a {
-        margin-top: 0.5vh;
-        position: relative;
+        top: 0.5vh;
+        position: absolute;
         width: 12vh;
         height: 12vh;
         z-index: 15;
@@ -25,6 +39,7 @@ const Landing = () => {
     return (
     <LandingWrap>         
         <Link to="bg-page" />
+        <h1 className="showcase">css blendr</h1>
     </LandingWrap>
     )
 }
