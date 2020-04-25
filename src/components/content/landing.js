@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
+import LandingLogo from './landinglogo';
 
 const LandingWrap = styled('div')`
     width: 100vw;
@@ -14,14 +15,14 @@ const LandingWrap = styled('div')`
     text-align: center;
     h1 {
         width: 100%;
-        margin: 70vh auto;
-        font-size: 65px;
+        margin: 75vh auto;
+        font-size: 50px;
         opacity: 1;
         font-family: "Megrim", sans-serif;
-        ${'' /* font-weight: thin; */}
         color: #362828;  /* TODO: choose a brown for text color & be done with it */
+        color: #5d4545;
         text-shadow: 1px 1px 0.5px #47E8B3; /* light bluegreen */
-        text-shadow: 2px 2px 0px #fff;
+        ${'' /* text-shadow: 2px 2px 0px #fff; */}
         
     }
     a {
@@ -33,12 +34,20 @@ const LandingWrap = styled('div')`
         border-radius: 50%;
         ${'' /* border: 1px dashed #000; */}
     }
+    svg {
+        mix-blend-mode: color-burn;
+        position: absolute;
+        top: 8vh;
+        left: -55vw;
+        opacity: 0.6;
+    }
 `;
 const Landing = () => {
     // console.log("LandingWrap: ")
     return (
     <LandingWrap>         
         <Link to="bg-page" />
+        <LandingLogo/>
         <h1 className="showcase">css blendr</h1>
     </LandingWrap>
     )
