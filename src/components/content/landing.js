@@ -59,7 +59,7 @@ const Landing = () => {
     <LandingWrap>         
         <Link to="bg-page" />
         <LandingLogo/>
-        <h2>An interactive tool<br/>for learning<br/><i>mix-blend-mode</i></h2>
+        <h2>A web appliance<br/>for learning<br/><i>mix-blend-mode</i></h2>
         <h1 className="showcase">css blendr</h1>
     </LandingWrap>
     )
