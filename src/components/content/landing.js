@@ -15,15 +15,26 @@ const LandingWrap = styled('div')`
     text-align: center;
     h1 {
         width: 100%;
-        margin: 78vh auto;
+        margin: 15vh auto;
         font-size: 50px;
         opacity: 1;
         font-family: "Megrim", sans-serif;
-        color: #362828;  /* TODO: choose a brown for text color & be done with it */
         color: #745959;
         text-shadow: 1px 1px 0.5px #47E8B3; /* light bluegreen */
         ${'' /* text-shadow: 2px 2px 0px #fff; */}
-        
+    }
+    h2, i {
+        width: 90%;
+        margin: 40vh auto 10vh;
+        font-size: 25px;
+        text-align: right;
+        font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        font-weight: 200;
+        opacity: 1;
+        color: #745959;
+    }
+    i {
+        font-weight: 400;
     }
     a {
         top: 0.5vh;
@@ -48,6 +59,7 @@ const Landing = () => {
     <LandingWrap>         
         <Link to="bg-page" />
         <LandingLogo/>
+        <h2>An interactive tool<br/>for learning<br/><i>mix-blend-mode</i></h2>
         <h1 className="showcase">css blendr</h1>
     </LandingWrap>
     )
