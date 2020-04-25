@@ -20,6 +20,16 @@ a {
     z-index: 15;
     border-radius: 50%;
     ${'' /* border: 1px dashed #000; */}
+    &.home-link {
+        ${'' /* border: 2px dashed fuchsia; */}
+        background: radial-gradient( circle,
+      #27EFF0 0%,
+      #27EFF0 23%,
+      rgba(0, 255, 255,0.5) 27%,
+      rgba(0, 255, 255,0.1) 40%,
+      rgba(0, 255, 255,0) 55%,
+      rgba(0,0,0,0) 100%);
+    }
 }
 `
 const BGPage = () => {
@@ -27,7 +37,7 @@ const BGPage = () => {
     return (
         <BGPageWrapper>
             <Layout>
-                <Link to="/"/>
+                <Link className="home-link" to="/"/>
                 {/* <PanelBG /> */}
             </Layout>
         </BGPageWrapper>
