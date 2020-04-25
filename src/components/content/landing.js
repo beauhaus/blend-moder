@@ -15,12 +15,12 @@ const LandingWrap = styled('div')`
     text-align: center;
     h1 {
         width: 100%;
-        margin: 75vh auto;
+        margin: 78vh auto;
         font-size: 50px;
         opacity: 1;
         font-family: "Megrim", sans-serif;
         color: #362828;  /* TODO: choose a brown for text color & be done with it */
-        color: #5d4545;
+        color: #745959;
         text-shadow: 1px 1px 0.5px #47E8B3; /* light bluegreen */
         ${'' /* text-shadow: 2px 2px 0px #fff; */}
         
@@ -39,7 +39,7 @@ const LandingWrap = styled('div')`
         position: absolute;
         top: 8vh;
         left: -55vw;
-        opacity: 0.6;
+        opacity: 1;
     }
 `;
 const Landing = () => {
