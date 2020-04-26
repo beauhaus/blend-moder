@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Layout from '../components/scaffold/layout'
 import "normalize.css"
 import styled from '@emotion/styled'
@@ -57,7 +57,15 @@ hr{
 }
 `;
 
-const IndexPg =() => (
+const IndexPg =() => {
+    const [power, setPower] = useState('')
+    
+    const bgPgLinkClickHandler=()=> {
+        console.log("bgPgLinkClickHandler!")
+        setPower("on")
+    }
+
+    return (
     <AppFrame>
     <hr/>
     <hr/>
@@ -68,11 +76,11 @@ const IndexPg =() => (
     <hr/>
     <hr/>
     <hr/>
-    <Layout>
+    <Layout power={power}>
     
-        <Landing/>
+        <Landing bgPgLinkClick={bgPgLinkClickHandler}/>
     </Layout>    
     </AppFrame>
-    );
+    )};
 
 export default IndexPg

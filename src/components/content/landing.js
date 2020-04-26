@@ -53,11 +53,11 @@ const LandingWrap = styled('div')`
         opacity: 1;
     }
 `;
-const Landing = () => {
+const Landing = ({bgPgLinkClick}) => {
     // console.log("LandingWrap: ")
     return (
     <LandingWrap>         
-        <Link to="bg-page" />
+        <Link to="bg-page" onClick={bgPgLinkClick}/>
         <LandingLogo/>
         <h2>A web appliance<br/>for learning<br/><i>mix-blend-mode</i></h2>
         <h1 className="showcase">css blendr</h1>

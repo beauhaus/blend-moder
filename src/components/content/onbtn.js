@@ -1,16 +1,16 @@
 import React , { useState } from 'react';
 import styled from '@emotion/styled'
 // import { Link } from 'gatsby'
-import powerbtnStyles from './powerbtn.module.scss';
+import onBtnStyles from './onBtn.module.scss';
 
 
-const PowerBtn = () => {
+const OnBtn = () => {
 
     return (
-    <button className={powerbtnStyles.container}>
+    <button className={onBtnStyles.container}>
        <div className="cast-light"></div>
     </button>
     )
 }
 
-export default PowerBtn;
+export default OnBtn;

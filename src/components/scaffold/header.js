@@ -1,9 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/core'
-import PowerBtn from '../content/powerbtn'
+import OnBtn from '../content/onbtn'
 
-const Header = () => {
-    
+const Header = ({power}) => {
+    console.log(`headerPwr: ${power}`)
     return (
         <header css={css`
     /* calc is based on desired max-width of main
@@ -23,7 +23,7 @@ const Header = () => {
             justify-content: space-around;
             align-items: center;
         `}>
-                <PowerBtn/>
+                <OnBtn/>
 
             </nav>
         </header>

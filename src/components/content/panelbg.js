@@ -42,26 +42,13 @@ button {
   &:focus, &:active {
     outline: none;
   }
-  ${'' /* .on-off-light {
-    border-radius: 50%;
-    margin: auto;
-    width: 40px;
-    height:  40px;
-    background: transparent;
-    border: 2px solid #27EFF0;
-    opacity: 0.25;
-  } */}
+
 }
 
 `;
 const PanelBG = () => {
 
-  // const [power, setPower] = useState(true)
-
-  // const powerToggle=() => {
-  //   setPower(!power)
-  // }
-  // console.log("PanelBGWrap: ")
+  
   return (
     <PanelBGWrap>
       <svg className="panel-svg" width="100%">

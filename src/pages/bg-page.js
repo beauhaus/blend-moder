@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'gatsby'
 import Layout from '../components/scaffold/layout'
 // import TileBG from '../components/content/tilebg' /*ipad -> desktop */
@@ -21,7 +21,6 @@ a {
     border-radius: 50%;
     ${'' /* border: 1px dashed #000; */}
     &.home-link {
-        ${'' /* border: 2px dashed fuchsia; */}
         background: radial-gradient( circle,
       #27EFF0 0%,
       #27EFF0 23%,
@@ -34,10 +33,17 @@ a {
 `
 const BGPage = () => {
     // console.log("XXX: ")
+    const [power, setPower] = useState('')
+    
+    const homeLinkClickHandler=()=> {
+        console.log("homeLinkClickHandler!")
+        setPower("off")
+    }
+
     return (
         <BGPageWrapper>
-            <Layout>
-                <Link className="home-link" to="/"/>
+            <Layout power={power}>
+                <Link className="home-link" to="/" onClick={homeLinkClickHandler}/>
                 {/* <PanelBG /> */}
             </Layout>
         </BGPageWrapper>

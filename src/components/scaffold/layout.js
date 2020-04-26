@@ -13,7 +13,8 @@ import useSiteMetadata from '../../hooks/use-site-metadata'
 const GlobalStyles = css`${GlobalStylesImport}`;
 const cssMain = css`${layoutMainImport}`;
 
-const Layout = ({ children }) => {
+const Layout = ({ power, children }) => {
+    console.log(">layout power: ", power)
     const { title, desc } = useSiteMetadata();
     return (
         <>
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
                 <title>SVG Experiments</title>
                 <meta name={title} content={desc} />
             </Helmet>
-            <Header />
+            <Header power={power}/>
             <main css={cssMain}>
                   <PanelBG />
                 {children}
