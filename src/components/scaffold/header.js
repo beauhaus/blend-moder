@@ -1,9 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/core'
-import OnBtn from '../content/onbtn'
+import PwrBtn from '../content/pwrbtn'
 
-const Header = ({power}) => {
-    console.log(`headerPwr: ${power}`)
+
+const Header = ({path}) => {
     return (
         <header css={css`
     /* calc is based on desired max-width of main
@@ -23,8 +23,7 @@ const Header = ({power}) => {
             justify-content: space-around;
             align-items: center;
         `}>
-                <OnBtn/>
-
+                <PwrBtn path={path}/>
             </nav>
         </header>
     )
@@ -32,12 +31,3 @@ const Header = ({power}) => {
 
 export default Header;
 
-
-
-                {/* <NavLink to="/" activeClassName="current-page" fontWeight={`300`}>Home</NavLink> */}
-                {/* <NavLink to="/about" activeClassName="current-page">about</NavLink> */}
-                {/* <NavLink to="/xpage" activeClassName="current-page">xpage</NavLink> */}
-                {/* <NavLink to="/blend-page" activeClassName="current-page">blends</NavLink> */}
-                {/* <NavLink to="/modeblenderpage" activeClassName="current-page">MB</NavLink> */}
-
-                

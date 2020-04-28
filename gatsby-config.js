@@ -7,6 +7,13 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/layouts/index.js`),
+      },
+    },
+    'gatsby-plugin-react-helmet',
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "fonts",

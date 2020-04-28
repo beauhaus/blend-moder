@@ -25,25 +25,7 @@ h2 {
   right: 3vw;
   position: absolute;
 }
-button {
-  position: absolute;
-  left: 40vw;
-  top: 20vh;
-  border-radius: 50%;
-  width:100px;
-  height: 100px;
-  background: linear-gradient(45deg, hsl(45, 26%, 87%) 0%, #f3eedc 50%, hsl(45, 26%, 87%) 100%);
-  border: 8px solid #F1F0EE;
-  box-shadow: inset 0px 0px 0px 1px #b1a67d;
-  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
 
-  display: grid;
-  &:focus, &:active {
-    outline: none;
-  }
-
-}
 
 `;
 const PanelBG = () => {

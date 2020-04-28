@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import LandingLogo from './landinglogo';
 
 const LandingWrap = styled('div')`
+    
     width: 100vw;
     min-height: 100vh;
     height: auto;
@@ -36,15 +37,6 @@ const LandingWrap = styled('div')`
     i {
         font-weight: 400;
     }
-    a {
-        top: 0.5vh;
-        position: absolute;
-        width: 12vh;
-        height: 12vh;
-        z-index: 15;
-        border-radius: 50%;
-        ${'' /* border: 1px dashed #000; */}
-    }
     svg {
         mix-blend-mode: color-burn;
         position: absolute;
@@ -53,11 +45,9 @@ const LandingWrap = styled('div')`
         opacity: 1;
     }
 `;
-const Landing = ({bgPgLinkClick}) => {
-    // console.log("LandingWrap: ")
+const Landing = (props) => {
     return (
     <LandingWrap>         
-        <Link to="bg-page" onClick={bgPgLinkClick}/>
         <LandingLogo/>
         <h2>A web appliance<br/>for learning<br/><i>mix-blend-mode</i></h2>
         <h1 className="showcase">css blendr</h1>
